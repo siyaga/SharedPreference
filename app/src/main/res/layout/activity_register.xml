@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Tanggal Pengerjaan      : Jumat, 1 Mei 2020
+Deskripsi Pengerjaan    : Membuat Layout Register
+NIM                     : Ananda Marwanaya Putra
+Nama                    : 10117157
+Kelas                   : IF-4
+ -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_main"
+    android:background="@color/colorPeterRiver"
+    android:padding="@dimen/dimen24"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/lin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen16"
+            android:src="@drawable/ic_child_friendly" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen5"
+            android:gravity="center"
+            android:text="NGASUH"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen20"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen5"
+            android:gravity="center"
+            android:text="Siap Menjadi Orangtua Muda"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen14" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lin_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font16"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dimen30"
+            android:layout_marginStart="@dimen/dimen50"
+            android:layout_marginLeft="@dimen/dimen50"
+            android:layout_marginEnd="@dimen/dimen50"
+            android:layout_marginRight="@dimen/dimen50"
+            />
+
+        <View
+            android:layout_width="@dimen/dimen20"
+            android:layout_height="@dimen/dimen3"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:layout_marginTop="@dimen/dimen10"
+            android:layout_marginStart="@dimen/dimen50"
+            android:layout_marginLeft="@dimen/dimen50"
+            android:layout_marginEnd="@dimen/dimen50"
+            android:layout_marginRight="@dimen/dimen50"
+            />
+
+        <EditText
+            android:id="@+id/edt_reg_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:hint="Username"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="@dimen/font14"
+            android:layout_marginTop="@dimen/dimen20"
+            android:layout_marginStart="@dimen/dimen50"
+            android:layout_marginLeft="@dimen/dimen50"
+            android:layout_marginEnd="@dimen/dimen50"
+            android:layout_marginRight="@dimen/dimen50"
+            />
+
+        <EditText
+            android:id="@+id/edt_reg_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:hint="Password"
+            android:imeActionId="6"
+            android:imeActionLabel="Sign In"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="@dimen/font14"
+            android:layout_marginTop="@dimen/dimen10"
+            android:layout_marginStart="@dimen/dimen50"
+            android:layout_marginLeft="@dimen/dimen50"
+            android:layout_marginEnd="@dimen/dimen50"
+            android:layout_marginRight="@dimen/dimen50"
+            />
+
+        <EditText
+            android:id="@+id/edt_reg_password_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:hint="Confirm"
+            android:imeActionId="6"
+            android:imeActionLabel="Sign In"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="@dimen/font14"
+            android:layout_marginTop="@dimen/dimen10"
+            android:layout_marginStart="@dimen/dimen50"
+            android:layout_marginLeft="@dimen/dimen50"
+            android:layout_marginEnd="@dimen/dimen50"
+            android:layout_marginRight="@dimen/dimen50"
+            />
+
+        <EditText
+            android:id="@+id/edt_reg_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:hint="Phonenumber"
+            android:imeActionLabel="Sign In"
+            android:imeOptions="actionDone"
+            android:inputType="text|number"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="@dimen/font14"
+            android:layout_marginTop="@dimen/dimen10"
+            android:layout_marginStart="@dimen/dimen50"
+            android:layout_marginLeft="@dimen/dimen50"
+            android:layout_marginEnd="@dimen/dimen50"
+            android:layout_marginRight="@dimen/dimen50"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin_middle"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/tv_reg_masuk"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen40"
+            android:background="@drawable/bg_btn_masuk"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Register"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dimen20"
+            android:layout_marginStart="@dimen/dimen50"
+            android:layout_marginLeft="@dimen/dimen50"
+            android:layout_marginEnd="@dimen/dimen50"
+            android:layout_marginRight="@dimen/dimen50"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
