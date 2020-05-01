@@ -3,4 +3,13 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorPeterRiver">#3498db</color>
+    <color name="colorPeterPressed">#2980b9</color>
+    <color name="greenLogin">#96EB64</color>
+    <color name="greenPressed">#32AF5A</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="yellowRegister">#FFC800</color>
+    <color name="yellowPressed">#FA6432</color>
 </resources>
